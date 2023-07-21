@@ -1,0 +1,106 @@
+header{
+     position:relative;
+     background-color:black;
+     height:75vh;
+     min-height:25rem;
+     width:100%;
+     overflow:hidden;
+   }
+
+   li{
+    font-family: 'Signika', sans-serif;
+   }
+
+   b{
+     font-family: 'Signika', sans-serif;
+   }
+
+   header video{
+     position:absolute;
+     top:50%;
+     left:50%;
+     min-width:100%;
+     min-height:100%;
+     width:auto;
+     height:auto;
+     z-index:0;
+     -ms-transform:translateX(-50%) translateY(-50%);
+     -moz-transform:translateX(-50%) translateY(-50%);
+     -webkit-transform:translateX(-50%) translateY(-50%);
+      transform:translateX(-50%) translateY(-50%);
+   }
+
+   header.container{
+     position:relative;
+     z-index:2;
+   }
+
+   header.overlay{
+     position:absolute;
+     top:0;
+     left:0;
+     height:100%;
+     width:100%;
+     background-color:black;
+     opacity:0.5;
+     z-index:1;
+   }
+
+   h1.display-4{
+     font-family: 'Mr Dafoe', cursive;
+     font-size:25rem;
+   }
+
+   img {
+    position:relative;
+    float:left;
+    padding-right:10px;
+    border-radius:50%;
+   }
+    
+
+   img.rounded.float-right{
+     position:relative;
+     float:right;
+     object-fit:contain;
+     border-radius:10em;
+   }
+
+   img.rounded.float-left{
+     position:relative;
+     float:left;
+     object-fit: cover;
+     border-radius:10em;
+   }
+    
+    
+    img.Deakins{
+     position:relative;
+     border-radius:10em;
+     width: auto;
+     object-fit:contain;
+      filter: grayscale();
+    }
+    
+    
+   .rounded {
+    border-radius: -1.75rem;
+    filter: grayscale(1);
+}
+   
+
+   blockquote{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:25rem;
+    margin-left:5px;
+   }
+
+   @media (pointer:coarse) and (hover:none) {
+     header{
+       background:url('https://unsplash.com/photos/qEswHvOmi1c') black no-repeat center center scroll;
+     }
+
+   header video{
+     display:none;
+   }
+ }
