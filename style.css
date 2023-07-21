@@ -46,13 +46,6 @@ header{
      z-index:1;
    }
 
-video {
-     border: 1px solid black; 
-}
-.video-overlay { 
-     position: absolute; width: 400px; height: 300px; z-index: 999; 
-}
-
    h1.display-4{
      font-family: 'Mr Dafoe', cursive;
      font-size:25rem;
