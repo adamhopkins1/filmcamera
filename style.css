@@ -84,7 +84,7 @@ header{
     
     
    .rounded {
-    border-radius: -1.75rem;
+    border-radius: -0.75rem!important;
     filter: grayscale(1);
 }
    
