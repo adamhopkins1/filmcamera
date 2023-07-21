@@ -46,10 +46,10 @@ header{
      z-index:1;
    }
 
-#video {
+video {
      border: 1px solid black; 
 }
-#video-overlay { 
+.video-overlay { 
      position: absolute; width: 400px; height: 300px; z-index: 999; 
 }
 
