@@ -73,22 +73,47 @@
     padding-right:10px;
     border-radius:50%;
    }
+    
 
-   img.rounded float-right{
+   img.rounded.float-right{
      position:relative;
-     float:left;
-     padding-right:10px;
-     border-radius:50%;
+     float:right;
+     object-fit:contain;
+     border-radius:10em;
    }
 
-   img.rounded float-left{
+   img.rounded.float-left{
      position:relative;
      float:left;
      object-fit: cover;
-     border-radius: 50%;
-     height: 100px;
-     width: 100px;
+     border-radius:10em;
    }
+    
+    
+    img.Deakins{
+     position:relative;
+     border-radius:10em;
+     width: auto;
+     object-fit:contain;
+      filter: grayscale();
+    }
+    
+    
+    img.Goat{
+     position:relative;
+     border-radius:              -0.75rem!important;
+     width: auto;
+     object-fit:contain;
+      filter: grayscale();
+    }
+    
+    .rounded {
+    border-radius: 2.25rem!important;
+      filter:grayscale();
+}
+    img.rounded{
+      border-radius: 3.25rem!important;
+    }
 
    blockquote{
     font-family: 'Josefin Sans', sans-serif;
@@ -151,11 +176,12 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <blockquote class="blockquote">
-            <img src="https://lh3.googleusercontent.com/h1_E_LehTvtlrS6IEWBMmHhQS-nu0FdKsJ4gBcwCTFrQ49aptttNFxhnF0HRSEaHX6g9Ug=s128" class="rounded float-left" alt="Rogers Deakins" width="100" height="100">
+            <div class="image-cropper">
+            <img class="Deakins" src="https://lh3.googleusercontent.com/h1_E_LehTvtlrS6IEWBMmHhQS-nu0FdKsJ4gBcwCTFrQ49aptttNFxhnF0HRSEaHX6g9Ug=s128" class="rounded float-left" alt="Rogers Deakins">
             <p class="mb-0">"The biggest challenge of any cinematographer is making the imagery fit together of a piece: that the whole film has a unity to it, and actually, that a shot doesn't stand out."-Roger Deakins (Cinematographer-The Assassination of Jesse James by the Coward Robert Ford,Blade Runner 2049,1917)</p>
           </blockquote>
           <blockquote class="blockquote">
-            <img src="https://lh3.googleusercontent.com/QqR2o1VJQ2PK7P4s8bPyfxlbd4sxz0Vu3mAB4hd7MnrEgRLRcZ0A6EvCxhF12Nn22QPNBA=s131" class="rounded float-right" alt="Chivo" width="100" height="100">
+            <img class"Goat" src="https://lh3.googleusercontent.com/QqR2o1VJQ2PK7P4s8bPyfxlbd4sxz0Vu3mAB4hd7MnrEgRLRcZ0A6EvCxhF12Nn22QPNBA=s131" class="rounded float-right" alt="Chivo">
             <p class="mb-0">"The language of film is further and further away from the language of theater and is closer to music. It's abstract but still narrative."-Emmanuel Lubeszki (Cinematographer-Birdman (Or the Unexpected Virtue of Ingnorance),Gravity,The Revenant)</p>
           </blockquote>
           <blockquote class="blockquote">
@@ -166,6 +192,8 @@
         </div>
       </div>
       <div>
+                                                                              </div>
+        </div>
   </section>
   <!-- Start of JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
